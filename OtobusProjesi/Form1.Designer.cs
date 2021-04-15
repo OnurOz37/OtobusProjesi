@@ -58,16 +58,16 @@ namespace OtobusProjesi
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(54, 17);
             this.lbl1.TabIndex = 0;
-            this.lbl1.Text = "Otobus";
+            this.lbl1.Text = "Bus No";
             // 
             // lbl2
             // 
             this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(52, 85);
+            this.lbl2.Location = new System.Drawing.Point(28, 85);
             this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(88, 17);
+            this.lbl2.Size = new System.Drawing.Size(116, 17);
             this.lbl2.TabIndex = 1;
-            this.lbl2.Text = "Koltuk Sayisi";
+            this.lbl2.Text = "Nombre de siège";
             // 
             // label3
             // 
@@ -84,7 +84,7 @@ namespace OtobusProjesi
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(230, 71);
             this.btn1.TabIndex = 3;
-            this.btn1.Text = "Olustur";
+            this.btn1.Text = "Générer";
             this.btn1.UseVisualStyleBackColor = true;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
@@ -98,7 +98,7 @@ namespace OtobusProjesi
             this.gb1.Size = new System.Drawing.Size(243, 178);
             this.gb1.TabIndex = 4;
             this.gb1.TabStop = false;
-            this.gb1.Text = "Satis-Iptal";
+            this.gb1.Text = "Vente-Annulation";
             // 
             // btn3
             // 
@@ -106,7 +106,7 @@ namespace OtobusProjesi
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(99, 65);
             this.btn3.TabIndex = 2;
-            this.btn3.Text = "Bilet Iptal ";
+            this.btn3.Text = "Annuler";
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.Click += new System.EventHandler(this.btn3_Click);
             // 
@@ -116,7 +116,7 @@ namespace OtobusProjesi
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(99, 65);
             this.btn2.TabIndex = 1;
-            this.btn2.Text = "Bilet Sat";
+            this.btn2.Text = "Vendre";
             this.btn2.UseVisualStyleBackColor = true;
             this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
@@ -125,9 +125,9 @@ namespace OtobusProjesi
             this.cb1.AutoSize = true;
             this.cb1.Location = new System.Drawing.Point(7, 76);
             this.cb1.Name = "cb1";
-            this.cb1.Size = new System.Drawing.Size(77, 21);
+            this.cb1.Size = new System.Drawing.Size(112, 21);
             this.cb1.TabIndex = 0;
-            this.cb1.Text = "Indirimli";
+            this.cb1.Text = "Avec Remise";
             this.cb1.UseVisualStyleBackColor = true;
             // 
             // gb2
@@ -147,7 +147,7 @@ namespace OtobusProjesi
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(110, 65);
             this.btn5.TabIndex = 1;
-            this.btn5.Text = "Bos Koltuk";
+            this.btn5.Text = "Siège vide";
             this.btn5.UseVisualStyleBackColor = true;
             this.btn5.Click += new System.EventHandler(this.btn5_Click);
             // 
@@ -157,7 +157,7 @@ namespace OtobusProjesi
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(121, 65);
             this.btn4.TabIndex = 0;
-            this.btn4.Text = "Bakiye";
+            this.btn4.Text = "Gain";
             this.btn4.UseVisualStyleBackColor = true;
             this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
@@ -185,7 +185,7 @@ namespace OtobusProjesi
             this.gb3.Size = new System.Drawing.Size(243, 178);
             this.gb3.TabIndex = 8;
             this.gb3.TabStop = false;
-            this.gb3.Text = "Satis-Iptal for Student";
+            this.gb3.Text = "Vente-Annulation pour étudiant";
             // 
             // button1
             // 
@@ -193,7 +193,7 @@ namespace OtobusProjesi
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 65);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Bilet Iptal ";
+            this.button1.Text = "Annuler";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -203,7 +203,7 @@ namespace OtobusProjesi
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 65);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Bilet Sat";
+            this.button2.Text = "Vendre";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -212,9 +212,9 @@ namespace OtobusProjesi
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(7, 76);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 21);
+            this.checkBox1.Size = new System.Drawing.Size(82, 21);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Ogrenci";
+            this.checkBox1.Text = "Etudiant";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // Form1

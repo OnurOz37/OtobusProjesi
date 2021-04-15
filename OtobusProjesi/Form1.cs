@@ -26,15 +26,15 @@ namespace OtobusProjesi
             {
                 Otogar = new Otobus(textBox1.Text, Convert.ToInt32(textBox2.Text));
                 
-                label3.Text = "Otobus numarasi olusturuldu, OtobusNo: " + textBox1.Text+ " "+ "Koltuk sayisi: "  +Otogar.BosKoltukOgren();
+                label3.Text = "Le numéro de Bus a été généré, busNo: " + textBox1.Text+ " "+ "Nombre de siège: "  +Otogar.BosKoltukOgren();
                 label3.ForeColor = Color.Black;
 
             }
             catch
             {
-                label3.Text = "Otobus numarasi olusturulamadi, girilen bilgileri tekrar kontrol ediniz";
+                label3.Text = "Impossible de générer le numéro de bus, veuillez entrer les informations correctement sinon ca va facher";
                 label3.ForeColor= Color.Red;
-                MessageBox.Show("Duzgun gir Uleynnnn");
+                MessageBox.Show("Tu fais quoi chacal");
             }
             /* Olustur butonuna yazdığımız kodlarla Otobus sınıfı üzerinden Otogar isimli bir nesne oluşturuyoruz
              * olustur butonuna basıldığında textbox kontrollerine girilen değerler parametre olarak gönderilerek kurucu metod, yani Otobus sinifindaki public otobusun çalışması saglaniyo
@@ -46,37 +46,37 @@ namespace OtobusProjesi
         private void btn2_Click(object sender, EventArgs e)
         {
             Otogar.BiletSat(cb1.Checked);
-            label3.Text = "Bilet satildi, Kalan koltuk sayisi : " + Otogar.BosKoltukOgren(); //sinifimizdaki metodlari cagirip calistiriyoruz
+            label3.Text = "Billet vendu, siège restant : " + Otogar.BosKoltukOgren(); //sinifimizdaki metodlari cagirip calistiriyoruz
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
             Otogar.BiletIptal(cb1.Checked);
-            label3.Text = "Bilet iptal edildi, Kalan koltuk sayisi : " + Otogar.BosKoltukOgren();
+            label3.Text = "Billet annulé, siège restant : " + Otogar.BosKoltukOgren();
 
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            label3.Text = "Bakiye : " + Otogar.BakiyeOgren() + "€";
+            label3.Text = "Gain : " + Otogar.BakiyeOgren() + "€";
 
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            label3.Text = "Bos koltuk sayisi : " + Otogar.BosKoltukOgren(); 
+            label3.Text = "Nombre de siège vide : " + Otogar.BosKoltukOgren(); 
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
            Otogar.OgrenciyeSat(checkBox1.Checked);
-            label3.Text = "Bilet ogrenci tarifesine gore satildi, lutfen gisede ogrenci kartinizi gosteriniz \nKalan koltuk sayisi: " + Otogar.BosKoltukOgren();
+            label3.Text = "Billet vendu au tarif étudiant, montre ta carte avant de monter a bord chacal \nSiège restant: " + Otogar.BosKoltukOgren();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Otogar.OgrenciIptal(checkBox1.Checked);
-            label3.Text = "Bilet ogrenci tarifesine gore iptal edildi, Kalan koltuk sayisi: " + Otogar.BosKoltukOgren(); 
+            label3.Text = "Billet annulé chacal, siège restant: " + Otogar.BosKoltukOgren(); 
         }
     }
 
